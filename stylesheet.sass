@@ -1,0 +1,102 @@
+$main-color: #2c3e70
+$secondary-color: #ff5555
+$white: #f1f1f1
+$black: #212121
+$orange: #ffcc33
+
+$heading: 'Montserrat', sans-serif
+$bodyfont: 'Open Sans', sans-serif
+$thin: 'Open Sans Condensed', sans-serif
+
+html, body
+	width: 100%
+	max-width: 100%
+	margin: 0
+	padding: 0
+
+*
+	box-sizing: border-box
+
+a
+	transition: color .4s
+	text-decoration: none
+
+p
+	padding: 0
+	margin: 0
+	font-family: $bodyfont
+
+.logo
+	text-transform: uppercase
+	font-family: $heading
+	color: $secondary-color
+	font-size: 8vw
+	width: 100%
+	background-color: $black
+	display: block
+	span
+		color: $main-color
+
+header
+	position: fixed
+	right: 0
+	top: 0	
+#account
+	height: 40px
+	width: 40px
+	background-size: cover
+	content: " "
+	display: block
+.backgroundImage
+	background-image: url(pink-sky.jpe)
+	background-position: 50% 50%
+	background-size: cover
+	background-repeat: no-repeat
+	filter: blur(10px)
+	width: 100vw
+	height: 100vh
+	position: fixed
+	top: 0
+	z-index: -1
+
+.weatherbanner
+	background-color: $main-color
+	height: 400px
+	color: $secondary-color
+	position: relative
+	p
+
+		font-family: 'Source Sans Pro'
+		font-size: 1.2em
+	i
+		margin-top: 80px
+		font-size: 7em
+		text-align: center
+		width: 100%
+	hr
+		width: 100%
+.location
+	position: absolute
+	bottom: 0
+	width: 100%
+	margin: 10px 0
+	p
+		padding: 0px 10px
+#windspeed
+	position: absolute
+	right: 0
+	top: 0
+#date
+	position: absolute
+	right: 0
+	top: 0
+	font-weight: bold
+	padding: 10px
+	padding-top: 15px
+#time
+	padding: 10px
+#temp
+	bottom: 0
+	right: 0
+	position: absolute
+	padding: 10px
